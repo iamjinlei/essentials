@@ -8,6 +8,6 @@ import (
 )
 
 func TestDingding(t *testing.T) {
-	t.Skip("")
+	t.Skip()
 	assert.NoError(t, NewDingding("fill in webhook", time.Minute).Send("test", []string{"line1", "line2"}))
 }
